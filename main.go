@@ -66,7 +66,7 @@ func main() {
 	}
 
 	r.GET("/messages", getAllExcuses)
-	r.POST("/excuse", addExcuse)
+	r.POST("/AddExcuse", addExcuse)
 
 	r.Run(":8080")
 }
