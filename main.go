@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )
 
@@ -8,6 +9,8 @@ var Messages []Message
 
 func main() {
 	r := gin.Default()
+
+	r.Use(cors.Default())
 
 	Messages = []Message{
 		{701, "Inexcusable", "Meh"},
